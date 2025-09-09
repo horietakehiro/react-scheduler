@@ -20,7 +20,9 @@
     "pre:commit": "lint-staged",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:ci": "jest --ci"
+    "test:ci": "jest --ci",
+    "ca:login": "aws codeartifact login --tool npm --domain ht-burdock --domain-owner 382098889955 --repository react-scheduler",
+    "publish": "cd dist && npm publish"
   },
   "exports": {
     "./types": {
